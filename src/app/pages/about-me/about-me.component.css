@@ -27,6 +27,7 @@
 
 #about-me-text {
   margin-bottom: 1.3em;
+  line-height: 2em;
 }
 
 #about-me-button {
@@ -44,12 +45,22 @@
   height: 80%;
 }
 
+.contact-item {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-item:hover {
+  color: rgb(141, 197, 250);
+  font-weight: bold;
+}
+
 @media(min-width: 768px) {
   #about-me-content {
     padding: 3.5em;
   }
 
   #about-me-banner img {
-    height: 60%;
+    height: 50%;
   }
 }

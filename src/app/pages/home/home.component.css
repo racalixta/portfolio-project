@@ -30,6 +30,7 @@
 
 #info-text {
   margin-bottom: 1.3em;
+  line-height: 2em;
 }
 
 #info-button {
@@ -44,11 +45,15 @@
 }
 
 #info-banner img {
-  height: 80%;
+  height: 100%;
 }
 
 @media(min-width: 768px) {
   #info-content {
     padding: 3.5em;
+  }
+
+  #info-banner img {
+    height: 80%;
   }
 }

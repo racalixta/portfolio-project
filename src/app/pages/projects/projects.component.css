@@ -23,6 +23,10 @@
   bottom: 2em;
 }
 
+#projects-text {
+  line-height: 2em;
+}
+
 #projects-subtitle {
   font-size: 1.2em;
   text-align: justify;

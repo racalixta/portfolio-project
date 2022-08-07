@@ -30,6 +30,7 @@
 
 #skills-text {
   margin-bottom: 1.3em;
+  line-height: 2em;
 }
 
 #skills-button {
@@ -43,7 +44,7 @@
 }
 
 #skills-banner img {
-  height: 80%;
+  height: 100%;
 }
 
 #tech-icons{
