@@ -1,0 +1,54 @@
+#info-container {
+  margin-top: 7em;
+}
+
+#info-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 4em 1em;
+}
+
+#info-title {
+  margin-bottom: 1.1em;
+  font-weight: bold;
+  position: relative;
+}
+
+#info-title::before {
+  width: 75px;
+  border-top: 4px solid #111111;
+  content: "";
+  position: absolute;
+  bottom: 2em;
+}
+
+#info-subtitle {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+#info-text {
+  margin-bottom: 1.3em;
+}
+
+#info-button {
+  font-size: 1.2em;
+}
+
+#info-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+
+#info-banner img {
+  height: 80%;
+}
+
+@media(min-width: 768px) {
+  #info-content {
+    padding: 3.5em;
+  }
+}

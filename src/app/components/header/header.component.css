@@ -1,0 +1,55 @@
+.bg-primary-color {
+  background-color: #fff;
+}
+
+.bg-dark-color {
+  background-color: #111111;
+}
+
+.bg-secondary-color {
+  background-color: #ece8ea;
+}
+
+.primary-color {
+  color: #050505;
+}
+
+.secondary-color {
+  /*color: #ece8ea;*/
+  color: whitesmoke;
+}
+
+/* NAVBAR   */
+
+#navbar a:hover {
+  color: rgb(141, 197, 250);
+}
+
+#navbar a.active {
+  border-bottom: 1px solid #ece8ea;
+  font-weight: bold;
+  color: #ece8ea;
+}
+
+#navbar a.active:hover {
+  color: rgb(141, 197, 250);
+  border-bottom: 1px solid rgb(141, 197, 250);
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#navbar-items .nav-item {
+  margin: 0 1em;
+}
+
+#snow-logo {
+  font-size: 1.5em;
+}

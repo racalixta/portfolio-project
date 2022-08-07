@@ -1,0 +1,55 @@
+
+#about-me-content {
+  display: flex;
+  align-items: center;
+  margin-top: 7em;
+  padding: 4em 1em;
+}
+
+#about-me-title {
+  margin-bottom: 1.1em;
+  font-weight: 700;
+  position: relative;
+}
+
+#about-me-title::before {
+  width: 75px;
+  border-top: 4px solid #111111;
+  content: "";
+  position: absolute;
+  bottom: 2em;
+}
+
+#about-me-subtitle {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+#about-me-text {
+  margin-bottom: 1.3em;
+}
+
+#about-me-button {
+  font-size: 1.2em;
+}
+
+#about-me-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+
+#about-me-banner img {
+  height: 80%;
+}
+
+@media(min-width: 768px) {
+  #about-me-content {
+    padding: 3.5em;
+  }
+
+  #about-me-banner img {
+    height: 60%;
+  }
+}

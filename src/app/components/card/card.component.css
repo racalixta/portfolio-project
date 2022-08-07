@@ -1,0 +1,44 @@
+#card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#card-tech-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: .5em;
+}
+
+#card-tech-icon img {
+  width: 60px;
+  cursor: pointer;
+}
+
+#btn-rep {
+  margin-bottom: 1.1em;
+}
+
+#btn-site {
+  margin-bottom: 1.1em;
+}
+
+#btn-site a:hover {
+  background-color: #414040;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.complete-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+
+}
