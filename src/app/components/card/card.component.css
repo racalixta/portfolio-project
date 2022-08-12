@@ -39,6 +39,14 @@
   text-align: justify;
 }
 
-@media (min-width: 768px) {
-
+.contact-item {
+  color: black;
+  text-decoration: none;
 }
+
+.contact-item:hover {
+  color: rgb(141, 197, 250);
+  font-weight: bold;
+}
+
+
