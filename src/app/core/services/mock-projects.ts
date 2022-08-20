@@ -1,0 +1,95 @@
+import { Project } from "../models/project.model";
+/*
+  {
+    id: 0,
+    title: "",
+    description: "",
+    linkRepository: "",
+    linkSite: "",
+    techs: ["HTML5", "CSS3"],
+  },
+*/
+
+export const PROJECTS: Project[] = [
+  {
+    id: 1,
+    title: "Pokédex",
+    description: "Desafio de criar uma Pokédex que tem como utilização a API PokeAPI  para o fornecimento dos dados. Para a construção desse projeto foi utilizado HTML5, CSS3, SCSS, Typescript e Angular.",
+    linkRepository: "https://github.com/racalixta/pokedex-angular",
+    linkSite: "https://racalixta.github.io/pokedex-angular/",
+    techs: ["HTML5", "CSS3", "SASS", "Typescript", "Angular"],
+  },
+  {
+    id: 2,
+    title: "Jogo Letreco",
+    description: "Desafio de replicar o jogo Letreco, que consiste em descobrir qual é a palavra do dia em um certo número de tentativas. Para o desenvolvimento foi utilizado HTML5, CSS3 e JavaScript.",
+    linkRepository: "https://github.com/racalixta/projeto-jogo-letreco",
+    linkSite: "https://racalixta.github.io/projeto-jogo-letreco/",
+    techs: ["HTML5", "CSS3", "JavaScript"],
+  },
+  {
+    id: 3,
+    title: "Jogo da Forca",
+    description: "Desafio de criar um jogo da forca, com sorteio da palavra-chave automático, por meio de uma lista de plavras feito pelo JavaScript. Para a realização desse projeto foi utilizado HTML5, CSS3 e JavaScript.",
+    linkRepository: "https://github.com/racalixta/projeto-forca",
+    linkSite: "https://racalixta.github.io/projeto-forca/",
+    techs: ["HTML5", "CSS3"],
+  },
+  {
+    id: 4,
+    title: "Portfólio",
+    description: "A ideia foi criar um portfólio que contém uma descrição básica sobre a minha pessoa e onde eu possa colocar todos os meus projetos desenvolvidos. Para a criação foi utilizado HTML5, CSS3, Angular e Bootstrap.",
+    linkRepository: "https://github.com/racalixta/portfolio-project",
+    linkSite: "https://racalixta.github.io/portfolio-project/",
+    techs: ["HTML5", "CSS3", "Angular", "Typescript", "Bootstrap"],
+  },
+  {
+    id: 5,
+    title: "Timer Pomodoro",
+    description: "Desafio de um Timer Pomodoro, que consiste em um Timer que alterna entre dois ciclos, um de trabalho/ação e um de descanso por uma quantidade de seções, com uma quantidade certa de minutos para cada ciclo, que pode ser escolhido pelo usuário.",
+    linkRepository: "https://github.com/racalixta/projeto-timer-pomodoro",
+    linkSite: "https://racalixta.github.io/projeto-timer-pomodoro/",
+    techs: ["HTML5", "CSS3", "JavaScript"],
+  },
+  {
+    id: 6,
+    title: "Mega-Sena",
+    description: "Este desafio foi pensado para desenvolver um simulador de sorteio da mega-sena. Para desenvolvido também um botão para alternar o site em o light mode e dark mode. Para a realização foi utilizado HTML5, CSS3 e JavaScript.",
+    linkRepository: "https://github.com/racalixta/projeto-megaSena",
+    linkSite: "https://racalixta.github.io/projeto-megaSena/",
+    techs: ["HTML5", "CSS3", "JavaScript"],
+  },
+  {
+    id: 7,
+    title: "iMovi",
+    description: "Desafio de criar um landing page responsiva para diversos tamanhos de telas de uma empresa de imóveis. Para a criação foi utilizado HTML5, CSS3 e Bootstrap 5.",
+    linkRepository: "https://github.com/racalixta/projeto-imovi",
+    linkSite: "https://racalixta.github.io/projeto-imovi/",
+    techs: ["HTML5", "CSS3", "Bootstrap"],
+  },
+  {
+    id: 8,
+    title: "Site Android",
+    description: "Desafio feito durante o curso de HTML5 e CSS3 do Curso em vídeo, o objetivo era criar um site responsivo sobre a histório do Android. Foi utilizado HTML5 e CSS3.",
+    linkRepository: "https://github.com/racalixta/projeto-android",
+    linkSite: "https://racalixta.github.io/projeto-android/",
+    techs: ["HTML5", "CSS3"],
+  },
+  {
+    id: 9,
+    title: "Formulário de Cadastro",
+    description: "Desafio de criar um formulário de cadastro que fosse responsivo à diversos tamanhos de telas. Para não ser apenas um HTML e CSS estático, desenvolvi uma pequena validação em JavaScript do formulário.",
+    linkRepository: "https://github.com/racalixta/projeto-formulario-cadastro",
+    linkSite: "https://racalixta.github.io/projeto-formulario-cadastro/",
+    techs: ["HTML5", "CSS3", "JavaScript"],
+  },
+  {
+    id: 10,
+    title: "",
+    description: "",
+    linkRepository: "",
+    linkSite: "",
+    techs: ["HTML5", "CSS3"],
+  },
+];
+
