@@ -11,28 +11,28 @@ export class HomeComponent implements OnInit {
   menuItems: MenuItem[] = [
     {
       name: 'Página Inicial',
-      toolTipText: 'Home',
-      routerLink: '/home#info'
+      toolTipText: 'Página Inicial',
+      routerLink: '#info'
     },
     {
       name: 'Sobre',
       toolTipText: 'Sobre',
-      routerLink: '/home#about-me'
+      routerLink: '#about-me'
     },
     {
       name: 'Habilidades',
       toolTipText: 'Habilidades',
-      routerLink: '/home#skills'
+      routerLink: '#skills'
     },
     {
       name: 'Projetos',
       toolTipText: 'Projetos',
-      routerLink: '/home#projects-carousel'
+      routerLink: '#projects-carousel'
     },
     {
       name: 'Contato',
       toolTipText: 'Contato',
-      routerLink: '/home#footer'
+      routerLink: '#footer'
     },
   ];
 
