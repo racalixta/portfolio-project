@@ -83,9 +83,9 @@
 <div class="row" *ngIf="page === 'home'" id="carousel-container">
 
   <!--Projeto HOME page-->
-  <div class="col-12 col-md-4 complete-card" *ngFor="let project of projectsCarousel">
+  <div class="col-12 col-md-4 complete-card" >
 
-      <div class="card" id="carousel-card">
+      <div class="card" id="carousel-card" *ngFor="let project of projectsCarousel">
 
         <img [src]="project.image[0]" class="card-img-top" [alt]="project.title">
         <div class="card-body">
