@@ -72,12 +72,6 @@
   padding: 0 3em;
 }
 
-.arrows {
-  color: black;
-  border-radius: 50%;
-  border: 1px solid orange;
-}
-
 @media(min-width: 768px) {
   #skills-content {
     padding: 3.5em;
