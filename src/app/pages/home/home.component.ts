@@ -12,27 +12,27 @@ export class HomeComponent implements OnInit {
     {
       name: 'Página Inicial',
       toolTipText: 'Página Inicial',
-      routerLink: '#home-info'
+      routerLink: '/home#info'
     },
     {
       name: 'Sobre',
       toolTipText: 'Sobre',
-      routerLink: '#home-about-me'
+      routerLink: '/home#about-me'
     },
     {
       name: 'Habilidades',
       toolTipText: 'Habilidades',
-      routerLink: '#home-skills'
+      routerLink: '/home#skills'
     },
     {
       name: 'Projetos',
       toolTipText: 'Projetos',
-      routerLink: '#home-projects-carousel'
+      routerLink: '/home#projects-carousel'
     },
     {
       name: 'Contato',
       toolTipText: 'Contato',
-      routerLink: '#home-footer'
+      routerLink: '/home#footer'
     },
   ];
 
