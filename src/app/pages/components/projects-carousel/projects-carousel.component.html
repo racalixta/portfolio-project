@@ -1,0 +1,92 @@
+<div class="container" id="projects-carousel">
+
+  <div class="col-12">
+
+      <div class="row">
+
+          <div class="col-12 bg-secondary-color" id="projects-content">
+              <div class="row">
+
+                  <div class="col-12 col-lg-10" id="projects-text">
+                      <h2 class="title primary-color" id="projects-title">Projetos</h2>
+                      <p class="subtitle secondary-color" id="projects-subtitle">
+                        Desde que meu foco se tornou ser um desenvolvedor front-end, venho fazendo projetos voltados para praticar meus conhecimentos nessa área. Utilizo, principalmente, Frontend Mentor para isso, além de plataformas como GitHub e Youtube para encontrar desafios. A seguir estão os meus principais projetos.
+                      </p>
+                  </div>
+
+              </div>
+            </div>
+
+      </div>
+
+      <!-- <div class="col-12" id="card-container" >
+        <app-card [index]="projectIds" [page]="page"></app-card>
+      </div> -->
+
+      <!-- CAROUSEL -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="7000">
+
+            <app-card [index]="projectIds" [page]="page"></app-card>
+
+          </div>
+
+          <div class="carousel-item" data-bs-interval="7000">
+
+            <app-card [index]="projectIds2" [page]="page"></app-card>
+
+          </div>
+
+          <div class="carousel-item" data-bs-interval="7000">
+
+            <app-card [index]="projectIds3" [page]="page"></app-card>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="row col-8 col-md-4 m-auto">
+          <a routerLink="/projects" class="btn btn-dark" (click)="toTop()">Ver Mais Projetos</a>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+

@@ -4,5 +4,7 @@ export interface Project {
   description: string,
   linkRepository: string,
   linkSite: string,
+  image: string[],
+  icons: string[],
   techs: string[],
 }

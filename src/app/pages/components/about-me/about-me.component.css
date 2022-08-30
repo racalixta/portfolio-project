@@ -42,7 +42,7 @@
 }
 
 #about-me-banner img {
-  height: 80%;
+  width: 60%;
 }
 
 .contact-item {
@@ -60,7 +60,10 @@
     padding: 3.5em;
   }
 
+}
+
+@media(min-width: 1024px) {
   #about-me-banner img {
-    height: 50%;
+    width: 50%;
   }
 }

@@ -1,4 +1,5 @@
-export interface MenuItem {
-  name: string,
-  routerLink: string,
+export interface MenuItem{
+  name: string;
+  toolTipText: string;
+  routerLink: string;
 }

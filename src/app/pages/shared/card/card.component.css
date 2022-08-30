@@ -1,28 +1,42 @@
-#card-container {
+#card-container,
+#projects-container
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#carousel-container {
   display: flex;
   justify-content: space-between;
 }
 
-#card-tech-icon {
-  display: flex;
-  justify-content: flex-start;
+/* #carousel-card {
+  height: 60%;
+} */
+
+.card-tech-icon,
+.card-tech-icon-project
+{
   margin-right: .5em;
+  margin-top: 5em;
 }
 
-#card-tech-icon img {
-  width: 60px;
+.card-tech-icon img,
+.card-tech-icon-project img
+{
+  width: 30px;
   cursor: pointer;
 }
 
-#btn-rep {
+.btn-repository {
   margin-bottom: 1.1em;
 }
 
-#btn-site {
+.btn-site {
   margin-bottom: 1.1em;
 }
 
-#btn-site a:hover {
+.btn-site a:hover {
   background-color: #414040;
 }
 
@@ -35,8 +49,15 @@
   cursor: pointer;
 }
 
-.card-text {
+.card-icon {
   text-align: justify;
+}
+
+.card-text {
+  align-items: flex-start;
+  text-align: justify;
+  min-height: 240px;
+  /* border: 1px solid orange; */
 }
 
 .contact-item {
@@ -48,5 +69,31 @@
   color: rgb(141, 197, 250);
   font-weight: bold;
 }
+
+.pages {
+  display: flex;
+
+}
+
+@media(min-width: 768px) {
+  .card-tech-icon img,
+  .card-tech-icon-project img
+  {
+    width: 40px;
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .card-tech-icon img
+  {
+    width: 50px;
+  }
+
+  .card-text {
+    min-height: 170px;
+  }
+}
+
 
 

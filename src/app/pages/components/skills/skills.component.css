@@ -38,9 +38,7 @@
 }
 
 #skills-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
 #skills-banner img {
@@ -50,12 +48,12 @@
 #tech-icons{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 #tech-icons img {
-  width: 70px;
+  width: 60px;
   cursor: pointer;
 }
 
@@ -87,6 +85,15 @@
 @media(min-width: 1000px) {
   #tech-icons {
     flex-wrap: nowrap;
+  }
+
+}
+
+@media(min-width: 1024px) {
+  #skills-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }

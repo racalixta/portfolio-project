@@ -4,41 +4,7 @@
           <i class="bi bi-snow2" id="snow-logo"></i>
       </a>
 
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-items"
-          aria-controls="navbar-items"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-      >
-        <i class="bi bi-list secondary-color"></i>
-      </button>
+      <app-toolbar [menuItems]="toolTips" [page]="page"></app-toolbar>
 
-      <div class="collapse navbar-collapse" id="navbar-items">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a href="#" class="nav-link secondary-color" aria-current="page" id="nav-home">Home</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#about-container" class="nav-link secondary-color" id="nav-about">Sobre</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#skills-container" class="nav-link secondary-color" id="nav-skills">Habilidades</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#projects-container" class="nav-link secondary-color" id="nav-projects">Projetos</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="#footer" class="nav-link secondary-color" id="nav-contact">Contato</a>
-              </li>
-
-          </ul>
-      </div>
   </div>
 </nav>

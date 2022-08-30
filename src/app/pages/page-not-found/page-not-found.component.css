@@ -1,0 +1,12 @@
+#not-found {
+  margin-top: 8em;
+  min-height: 90vh;
+}
+
+#not-found h1 {
+  font-weight: bold;
+}
+
+#not-found p {
+  font-size: 1.2em;
+}

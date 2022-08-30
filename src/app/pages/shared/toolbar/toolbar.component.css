@@ -21,17 +21,17 @@
 
 /* NAVBAR   */
 
-#navbar a:hover {
+.nav-item a:hover {
   color: rgb(141, 197, 250);
-} 
+}
 
-#navbar a.active {
+.nav-item a.active {
   border-bottom: 1px solid #ece8ea;
   font-weight: bold;
   color: #ece8ea;
 }
 
-#navbar a.active:hover {
+.nav-item a.active:hover {
   color: rgb(141, 197, 250);
   border-bottom: 1px solid rgb(141, 197, 250);
 }
@@ -40,16 +40,31 @@
   display: flex;
 }
 
-#navbar-items .navbar-nav {
+/* #navbar-items .navbar-nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-}
+} */
 
-#navbar-items .nav-item {
+
+#navbar-items-home .nav-item,
+#navbar-items-projects .nav-item,
+#navbar-items-not-found .nav-item
+{
   margin: 0 1em;
 }
 
 #snow-logo {
   font-size: 1.5em;
+}
+
+@media (min-width: 992px) {
+  #navbar-items-home,
+  #navbar-items-projects,
+  #navbar-items-not-found
+  {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
 }

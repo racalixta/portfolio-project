@@ -1,0 +1,114 @@
+<div class="container" *ngIf="page === 'home'">
+
+  <div class="collapse navbar-collapse" id="navbar-items-home" >
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngFor="let item of menuItems">
+        <li class="nav-item">
+            <a
+              [href]="item.routerLink"
+              class="nav-link secondary-color"
+              aria-current="page"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              [title]="item.toolTipText"
+            >
+            {{ item.name }}
+            </a>
+        </li>
+    </ul>
+  </div>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbar-items-home"
+    aria-controls="navbar-items"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="bi bi-list secondary-color"></i>
+  </button>
+
+</div>
+
+<div class="container" *ngIf="page === 'projects'">
+
+  <div class="collapse navbar-collapse" id="navbar-items-projects">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngFor="let item of menuItems">
+        <li class="nav-item">
+            <a
+              [routerLink]="item.routerLink"
+              class="nav-link secondary-color"
+              aria-current="page"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              [title]="item.toolTipText"
+            >
+            {{ item.name }}
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbar-items-projects"
+    aria-controls="navbar-items"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+  <i class="bi bi-list secondary-color"></i>
+  </button>
+
+</div>
+
+<div class="container" *ngIf="page === 'not-found'">
+
+  <div class="collapse navbar-collapse" id="navbar-items-not-found">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngFor="let item of menuItems">
+        <li class="nav-item">
+          <a
+              [routerLink]="item.routerLink"
+              class="nav-link secondary-color"
+              aria-current="page"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              [title]="item.toolTipText"
+            >
+            {{ item.name }}
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbar-items-not-found"
+    aria-controls="navbar-items"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+  <i class="bi bi-list secondary-color"></i>
+  </button>
+
+</div>
+
+<!-- <li class="nav-item">
+  <a href="#about-container" class="nav-link secondary-color" id="nav-about">Sobre</a>
+</li>
+
+<li class="nav-item">
+  <a href="#skills-container" class="nav-link secondary-color" id="nav-skills">Habilidades</a>
+</li>
+
+<li class="nav-item">
+  <a href="#projects-container" class="nav-link secondary-color" id="nav-projects">Projetos</a>
+</li>
+
+<li class="nav-item">
+  <a href="#footer" class="nav-link secondary-color" id="nav-contact">Contato</a>
+</li> -->

@@ -1,340 +1,118 @@
-<div class="row" id="card-container">
+<div class="row" *ngIf="page === 'projects' && projectsFilter.length === 0" id="card-container">
 
-<!--Projeto 1-->
-<div class="col-12 col-md-4 complete-card">
+  <!--Projeto PROJECTS page-->
 
-  <div class="card">
+    <div class="col-12 col-md-6 col-lg-4 complete-card" *ngFor="let project of projects">
 
-    <!-- [img]https://i.imgur.com/JOWKlPr.png[/img][img]https://i.imgur.com/JOWKlPr.png[/img][img]https://i.imgur.com/JOWKlPr.png[/img]-->
-    <img src="https://i.imgur.com/JOWKlPr.png" class="card-img-top" alt="Flex Turismo">
-    <div class="card-body">
-      <h5 class="card-title">Pokédex</h5>
-      <p class="card-text" id="card-tech-icon">
-        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
+        <div class="card" >
 
-        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
+          <img [src]="project.image[1]" class="card-img-top" [alt]="project.title">
+          <div class="card-body">
 
-        <img src="https://img.icons8.com/color/480/000000/sass.png" alt="SASS">
+            <h5 class="card-title">{{ project.title }}</h5>
 
-        <img src="https://img.icons8.com/color/480/000000/typescript.png" alt="Typescript">
+            <p class="card-icon">
+              <span class="card-tech-icon-project" *ngFor="let t of project.icons">
+                <img [src]="t" [alt]="project.techs">
+              </span>
 
-        <img src="https://img.icons8.com/color/480/000000/angularjs.png" alt="Angular">
+            </p>
 
-      </p>
-      <p class="card-text">
-        Desafio de criar uma Pokédex que tem como utilização a API <a href="https://pokeapi.co/" target="_blank" class="contact-item">PokeAPI <i class="bi bi-link"></i></a> para o fornecimento dos dados. Para a construção desse projeto foi utilizado HTML5, CSS3, SCSS, Typescript e Angular.
-      </p>
-      <div class="col-12">
-        <div class="row" id="btn-rep">
-          <a href="https://racalixta.github.io/pokedex-angular/" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
+
+
+            <p class="card-text">
+              {{ project.description }}
+            </p>
+
+            <div class="col-12">
+              <div class="row btn-repository">
+                <a [href]="project.linkRepository" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
+              </div>
+              <div class="row btn-site">
+                <a [href]="project.linkSite" target="_blank" class="btn btn-secondary">Abrir Site</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row" id="btn-site">
-          <a href="https://github.com/racalixta/pokedex-angular" target="_blank" class="btn btn-secondary">Abrir Site</a>
-        </div>
-      </div>
+
+
+
     </div>
-  </div>
 
 </div>
 
-  <!--Projeto 2-->
-  <div class="col-12 col-md-4 complete-card">
+<div class="row" *ngIf="page === 'projects' && projectsFilter.length > 0" id="projects-container">
 
-    <div class="card">
-      <!-- <img src="../../../assets/img/projects-img/letreco.jpg" class="card-img-top" alt="Projeto Letreco"> -->
-      <img src="https://i.imgur.com/mnmrnu7.jpg" class="card-img-top" alt="Projeto Letreco">
-      <div class="card-body">
-        <h5 class="card-title">Jogo Letreco</h5>
-        <p class="card-text" id="card-tech-icon">
-          <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
+  <!--Projeto PROJECTS FILTER page-->
 
-          <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
+    <div class="col-12 col-md-6 col-lg-4  complete-card" *ngFor="let project of projectsFilter">
 
-          <img src="https://img.icons8.com/color/480/000000/javascript.png" alt="JavaScript">
-        </p>
-        <p class="card-text">
-          Desafio de replicar o jogo Letreco, que consiste em descobrir qual é a palavra do dia em um certo número de tentativas. Para o desenvolvimento foi utilizado HTML5, CSS3 e JavaScript.
-        </p>
-        <div class="col-12">
-          <div class="row" id="btn-rep">
-            <a href="https://github.com/racalixta/projeto-jogo-letreco" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-          </div>
-          <div class="row" id="btn-site">
-            <a href="https://racalixta.github.io/projeto-jogo-letreco/" target="_blank" class="btn btn-secondary">Abrir Site</a>
+        <div class="card" >
+
+          <img [src]="project.image[1]" class="card-img-top" [alt]="project.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+
+            <p class="card-icon">
+              <span class="card-tech-icon-project" *ngFor="let t of project.icons">
+                <img [src]="t" [alt]="project.techs">
+              </span>
+
+            </p>
+
+            <p class="card-text">
+              {{ project.description }}
+            </p>
+
+            <div class="col-12">
+              <div class="row btn-repository">
+                <a [href]="project.linkRepository" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
+              </div>
+              <div class="row btn-site">
+                <a [href]="project.linkSite" target="_blank" class="btn btn-secondary">Abrir Site</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
     </div>
 
-  </div>
-
-
-<!--Projeto 3-->
-  <div class="col-12 col-md-4 complete-card">
-
-    <div class="card">
-      <!-- <img src="../../../assets/img/projects-img/jogo-forca.jpg" class="card-img-top" alt="forca"> -->
-      <img src="https://i.imgur.com/wg8ObZC.jpg" class="card-img-top" alt="forca">
-      <div class="card-body">
-        <h5 class="card-title">Jogo da Forca</h5>
-        <p class="card-text" id="card-tech-icon">
-          <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-          <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-          <img src="https://img.icons8.com/color/480/000000/javascript.png" alt="JavaScript">
-        </p>
-        <p class="card-text">
-          Desafio de criar um jogo da forca, com sorteio da palavra-chave automático, por meio de uma lista de plavras feito pelo JavaScript. Para a realização desse projeto foi utilizado HTML5, CSS3 e JavaScript.
-        </p>
-
-        <div class="col-12">
-
-          <div class="row" id="btn-rep">
-            <a href="https://github.com/racalixta/projeto-forca" target="_blank" class="btn btn-dark">
-              Repositório no GitHub
-            </a>
-          </div>
-
-          <div class="row" id="btn-site">
-            <a href="https://racalixta.github.io/projeto-forca/" target="_blank" class="btn btn-secondary">
-              Abrir Site
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-<!--Projeto 4 -->
-  <div class="col-12 col-md-4 complete-card">
-
-    <div class="card">
-      <!-- <img src="../../../assets/img/projects-img/portfolio.jpg" class="card-img-top" alt="portfolio"> -->
-      <img src="https://i.imgur.com/V4tFEYE.jpg" class="card-img-top" alt="portfolio">
-      <div class="card-body">
-        <h5 class="card-title">Portfólio</h5>
-        <p class="card-text" id="card-tech-icon">
-          <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-          <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-          <img src="https://img.icons8.com/color/480/000000/angularjs.png" alt="Angular">
-
-          <img src="https://img.icons8.com/color/480/000000/bootstrap.png" alt="Bootstrap">
-        </p>
-        <p class="card-text">
-          A ideia foi criar um portfólio que contém uma descrição básica sobre a minha pessoa e onde eu possa colocar todos os meus projetos desenvolvidos. Para a criação foi utilizado HTML5, CSS3, Angular e Bootstrap.
-        </p>
-        <div class="col-12">
-          <div class="row" id="btn-rep">
-            <a href="https://github.com/racalixta/portfolio-project" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-          </div>
-          <div class="row" id="btn-site">
-            <a href="#" target="_blank" class="btn btn-secondary">Abrir Site</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!--Projeto 5 -->
-  <div class="col-12 col-md-4 complete-card">
-
-    <div class="card">
-      <!-- <img src="../../../assets/img/projects-img/pomo1.PNG" class="card-img-top" alt="Projeto"> -->
-      <img src="https://i.imgur.com/h5AwpV2.png" class="card-img-top" alt="Timer pomodoro">
-      <div class="card-body">
-        <h5 class="card-title">Timer Pomodoro</h5>
-        <p class="card-text" id="card-tech-icon">
-          <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-          <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-          <img src="https://img.icons8.com/color/480/000000/javascript.png" alt="JavaScript">
-        </p>
-        <p class="card-text">
-          Desafio de um Timer Pomodoro, que consiste em um Timer que alterna entre dois ciclos, um de trabalho/ação e um de descanso por uma quantidade de seções, com uma quantidade certa de minutos para cada ciclo, que pode ser escolhido pelo usuário.
-        </p>
-
-        <div class="col-12">
-
-          <div class="row" id="btn-rep">
-            <a href="https://github.com/racalixta/projeto-timer-pomodoro" target="_blank" class="btn btn-dark">
-              Repositório no GitHub
-            </a>
-          </div>
-
-          <div class="row" id="btn-site">
-            <a href="https://racalixta.github.io/projeto-timer-pomodoro/" target="_blank" class="btn btn-secondary">
-              Abrir Site
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-
-<!--Projeto 6-->
-  <div class="col-12 col-md-4 complete-card">
-
-    <div class="card">
-      <!-- <img src="../../../assets/img/projects-img/mega-sena.jpg" class="card-img-top" alt="Projeto"> -->
-      <img src="https://i.imgur.com/NK2t9HF.jpg" class="card-img-top" alt="mega-sena">
-      <div class="card-body">
-        <h5 class="card-title">Mega-Sena</h5>
-        <p class="card-text" id="card-tech-icon">
-          <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-          <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-          <img src="https://img.icons8.com/color/480/000000/javascript.png" alt="JavaScript">
-        </p>
-        <p class="card-text">
-          Este desafio foi pensado para desenvolver um simulador de sorteio da mega-sena. Para desenvolvido também um botão para alternar o site em o light mode e dark mode. Para a realização foi utilizado HTML5, CSS3 e JavaScript.
-        </p>
-        <div class="col-12">
-          <div class="row" id="btn-rep">
-            <a href="https://github.com/racalixta/projeto-megaSena" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-          </div>
-          <div class="row" id="btn-site">
-            <a href="https://racalixta.github.io/projeto-megaSena/" target="_blank" class="btn btn-secondary">Abrir Site</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-<!--Projeto 7-->
-<div class="col-12 col-md-4 complete-card">
-
-  <div class="card">
-    <!-- <img src="../../../assets/img/projects-img/imovi.PNG" class="card-img-top" alt="iMovi"> -->
-    <img src="https://i.imgur.com/HVl0udQ.png" class="card-img-top" alt="iMovi">
-    <div class="card-body">
-      <h5 class="card-title">iMovi</h5>
-      <p class="card-text" id="card-tech-icon">
-        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-        <img src="https://img.icons8.com/color/480/000000/bootstrap.png" alt="bootstrap">
-
-      </p>
-      <p class="card-text">
-        Desafio de criar um landing page responsiva para diversos tamanhos de telas de uma empresa de imóveis. Para a criação foi utilizado HTML5, CSS3 e Bootstrap 5.
-      </p>
-      <div class="col-12">
-        <div class="row" id="btn-rep">
-          <a href="https://github.com/racalixta/projeto-imovi" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-        </div>
-        <div class="row" id="btn-site">
-          <a href="https://racalixta.github.io/projeto-imovi/" target="_blank" class="btn btn-secondary">Abrir Site</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </div>
 
-<!--Projeto 8-->
-<div class="col-12 col-md-4 complete-card">
+<div class="row" *ngIf="page === 'home'" id="carousel-container">
 
-  <div class="card">
-    <!-- <img src="../../../assets/img/projects-img/android.jpg" class="card-img-top" alt="Projeto android"> -->
-    <img src="https://i.imgur.com/RSyfLUo.jpg" class="card-img-top" alt="Projeto android">
-    <div class="card-body">
-      <h5 class="card-title">Site Android</h5>
-      <p class="card-text" id="card-tech-icon">
-        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
+  <!--Projeto HOME page-->
+  <div class="col-12 col-md-4 complete-card" *ngFor="let project of projectsCarousel">
 
-        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
+      <div class="card" id="carousel-card">
 
-      </p>
-      <p class="card-text">
-        Desafio feito durante o curso de HTML5 e CSS3 do Curso em vídeo, o objetivo era criar um site responsivo sobre a histório do Android. Foi utilizado HTML5 e CSS3.
-      </p>
-      <div class="col-12">
-        <div class="row" id="btn-rep">
-          <a href="https://github.com/racalixta/projeto-android" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-        </div>
-        <div class="row" id="btn-site">
-          <a href="https://racalixta.github.io/projeto-android/" target="_blank" class="btn btn-secondary">Abrir Site</a>
+        <img [src]="project.image[1]" class="card-img-top" [alt]="project.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+
+          <p class="card-icon">
+            <span class="card-tech-icon" *ngFor="let t of project.icons">
+              <img [src]="t" [alt]="project.techs">
+            </span>
+
+          </p>
+<!--
+          <p class="card-text">
+            {{ project.description }}
+          </p> -->
+
+          <div class="col-12">
+            <div class="row btn-repository">
+              <a [href]="project.linkRepository" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
+            </div>
+            <div class="row btn-site">
+              <a [href]="project.linkSite" target="_blank" class="btn btn-secondary">Abrir Site</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
   </div>
 
 </div>
-
-<!--Projeto 9-->
-<div class="col-12 col-md-4 complete-card">
-
-  <div class="card">
-    <!-- <img src="../../../assets/img/projects-img/form-cadastro.PNG" class="card-img-top" alt="cadastro"> -->
-    <img src="https://i.imgur.com/oOlJ3xM.png" class="card-img-top" alt="cadastro">
-    <div class="card-body">
-      <h5 class="card-title">Formulário de Cadastro</h5>
-      <p class="card-text" id="card-tech-icon">
-        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-        <img src="https://img.icons8.com/color/480/000000/javascript.png" alt="JavaScript">
-      </p>
-      <p class="card-text">
-        Desafio de criar um formulário de cadastro que fosse responsivo à diversos tamanhos de telas. Para não ser apenas um HTML e CSS estático, desenvolvi uma pequena validação em JavaScript do formulário.
-      </p>
-      <div class="col-12">
-        <div class="row" id="btn-rep">
-          <a href="https://github.com/racalixta/projeto-formulario-cadastro" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-        </div>
-        <div class="row" id="btn-site">
-          <a href="https://racalixta.github.io/projeto-formulario-cadastro/" target="_blank" class="btn btn-secondary">Abrir Site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Projeto 9 -->
-<!-- <div class="col-12 col-md-4 complete-card">
-
-  <div class="card"> -->
-    <!-- <img src="../../../assets/img/projects-img/flex-turismo.jpg" class="card-img-top" alt="Flex Turismo"> -->
-    <!-- <img src="https://i.imgur.com/T5NnABL.jpg" class="card-img-top" alt="Flex Turismo">
-    <div class="card-body">
-      <h5 class="card-title">Flex Turismo</h5>
-      <p class="card-text" id="card-tech-icon">
-        <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" alt="HTML5">
-
-        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="CSS3">
-
-      </p>
-      <p class="card-text">
-        Projeto de uma landing page de uma empresa de turismo, para aplicar e aprimorar o que foi ensinado no módulo II - Fundamentos da Web com HTML e CSS, do Bootcamp Geração Tech Unimed-BH | Fullstack.
-      </p>
-      <div class="col-12">
-        <div class="row" id="btn-rep">
-          <a href="https://github.com/racalixta/projeto-flexturismo" target="_blank" class="btn btn-dark">Repositório no GitHub</a>
-        </div>
-        <div class="row" id="btn-site">
-          <a href="https://racalixta.github.io/projeto-flexturismo/" target="_blank" class="btn btn-secondary">Abrir Site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-</div> -->

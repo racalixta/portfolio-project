@@ -1,0 +1,18 @@
+.label-tech {
+  cursor: pointer;
+  font-size: .8em;
+}
+
+.label-tech:hover {
+  font-weight: bold;
+}
+
+.label-tech input {
+  cursor: pointer;
+}
+
+@media(min-width: 768px) {
+  .label-tech {
+    font-size: 1em;
+  }
+}

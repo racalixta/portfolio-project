@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from '../app-routing.module';
 
 import { InfoComponent } from './components/info/info.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsCarouselComponent } from './components/projects-carousel/projects-carousel.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { AllProjectsComponent } from './all-projects/all-projects.component';
+
 
 import { CardComponent } from './shared/card/card.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SearchFilterComponent } from './shared/search-filter/search-filter.component';
+import { ToolbarComponent } from './shared/toolbar/toolbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const COMPONENTS = [
@@ -19,20 +24,24 @@ const COMPONENTS = [
   InfoComponent,
   SkillsComponent,
   ContactComponent,
+  ProjectsCarouselComponent,
   ProjectsComponent,
   AboutMeComponent,
-  AllProjectsComponent,
+  SearchFilterComponent,
+  ToolbarComponent,
 ];
 
 const SHARED = [
   CardComponent,
   HeaderComponent,
   FooterComponent,
+  PageNotFoundComponent,
 ];
 
 @NgModule({
+  // declarations: [COMPONENTS, SHARED, ProjectsComponent, SearchFilterComponent, ToolbarComponent, PageNotFoundComponent],
   declarations: [COMPONENTS, SHARED],
-  imports: [CommonModule],
+  imports: [CommonModule, AppRoutingModule],
   exports: [COMPONENTS, SHARED]
 })
 export class PagesModule { }
