@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsCarouselComponent implements OnInit {
 
   projectIds: number[] = [1, 4, 11];
-  projectIds2: number[] = [2, 3, 10];
-  projectIds3: number[] = [5, 6, 7];
+  projectIds2: number[] = [12, 5, 10];
+  projectIds3: number[] = [2, 3, 7];
   page: string = "home";
 
   toTop(): void {

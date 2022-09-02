@@ -131,21 +131,23 @@ export const PROJECTS: Project[] = [
   {
     id: 11,
     title: "Clima",
-    description: "Projeto de um aplciativo para monitoramento do clima, foi construído com o uso de uma Weather API da Open Weather, com o intuito de ser possível pesquisar qualquer cidade do mundo. Foi utilizado as seguintes tecnologias: React, JavaScript, TailwindCSS, HTML e CSS.",
+    description: "Projeto de um aplciativo para monitoramento do clima, foi construído com o uso de uma Weather API da Open Weather, com o intuito de ser possível pesquisar qualquer cidade do mundo. Foi utilizado as seguintes tecnologias: React, TailwindCSS, HTML e CSS.",
     linkRepository: "https://github.com/racalixta/weather-app",
     linkSite: "https://weather-app-tau-one-62.vercel.app/",
     image: ["https://i.imgur.com/Gu7IFpO.png", `${projectImg}weather-app.png`],
     icons: [`${techIconsLink.html}`, `${techIconsLink.css}`, `${techIconsLink.react}`, `${techIconsLink.javascript}`, `${techIconsLink.tailwind}`],
-    techs: ["HTML5", "CSS3", "React", "JavaScript", "Tailwind CSS"],
+    techs: ["HTML5", "CSS3", "React", "Tailwind CSS"],
   },
-
-// sistema financeiro
-// site: https://expense-tracker-alpha-one.vercel.app/
-// repo: https://github.com/racalixta/expense-tracker
-
-// weather
-// site: https://weather-app-tau-one-62.vercel.app/
-// repo: https://github.com/racalixta/weather-app
+  {
+    "id": 12,
+    "title": "App de Países",
+    "description": "Projeto de aplicativo com o intuito de mostrar informações de diversos países, para tal feito foi utilizado uma API com as informações dos países. As tecnologias utilizadas para o desenvolvimento foi HTML, CSS, React e TailwindCSS.",
+    "linkRepository": "https://github.com/racalixta/flag-app",
+    "linkSite": "https://flag-app-one.vercel.app/",
+    "image": ["https://i.imgur.com/aE0l99l.png", `${projectImg}`],
+    "icons": [`${techIconsLink.html}`, `${techIconsLink.css}`, `${techIconsLink.react}`, `${techIconsLink.tailwind}`],
+    "techs": ["HTML5", "CSS3", "React", "Tailwind CSS"],
+  },
 
   /*
   {
